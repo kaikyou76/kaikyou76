@@ -12,7 +12,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.kaikyou.bean.Brand;
 import com.kaikyou.bean.Motorcycle;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Controller
+@Slf4j
 public class MotosController {
 
     @RequestMapping("/hello")
@@ -37,6 +40,8 @@ public class MotosController {
 
         model.addAttribute("brands", brands);
         model.addAttribute("motorcycles", motorcycles);
+
+        log.info("motos:{}",motorcycles);
 
         return "moto_list";
     }
