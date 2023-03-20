@@ -1,4 +1,4 @@
-package com.kaikyou.bean;
+package com.kaikyou.motocatalog.beans;
 
 import java.time.LocalDateTime;
 
